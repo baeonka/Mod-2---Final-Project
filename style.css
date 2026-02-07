@@ -171,6 +171,11 @@ LANDING
     line-height: 28px;
 }
 
+.landing__logos--caption {
+    font-size: 16px;
+    color:#00000090;
+    margin-bottom: 16px;
+}
 .input__container {
     position: relative;
     width: 100%;
@@ -183,13 +188,9 @@ LANDING
     margin-bottom: 48px;
 }
 
-.header__form label {
-    width: 100%;
-    margin-bottom: 8px;
-}
-
 .header__form input[type="email"] {
     flex: 1;
+    font-size: 16px;
     padding: 24px;
     border-color: #0000002f;
     border-radius: 32px;
@@ -197,7 +198,7 @@ LANDING
 
 .header__form button {
     position: absolute;
-    left: 460px;
+    left: 452px;
     background-color: #747bf2;
     color: #fff;
     border: none;
@@ -207,4 +208,85 @@ LANDING
     padding: 20px 36px;
     cursor: pointer;
     margin-left: 10px;
+}
+
+.header__form button:hover {
+    background-color: rgb(100 21 255);
+}
+
+/*
+
+FEATURES
+
+*/
+
+.feat__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 80px 0;
+}
+
+.feat__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.feat__sub--head, 
+.feat__head,
+.feat__para {
+    margin: 10px 0;
+}
+
+.feat__sub--head {
+    font-size: 20px;
+}
+
+.feat__head {
+    font-size: 56px;
+}
+
+.feat__para {
+    padding: 0 240px;
+}
+
+.serv--row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.feat__services {
+    width: calc(100%/3);
+    display: flex;
+    box-sizing: border-box;
+    padding: 24px;
+    margin-bottom: 40px;
+
+}
+
+.feat__serv--icon {
+    width: 56px;
+    height: 56px;
+    border: 2px solid #0000002f;
+    border-radius: 32px;
+    padding: 12px;
+    margin-right: 32px;
+
+}
+
+.feat__serv--descript {
+    display: flex;
+    flex-direction: column;
+}
+
+.feat__serv--head {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.feat__serv--para {
+    font-size: 16px;
 }
