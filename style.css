@@ -224,7 +224,7 @@ FEATURES
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 8px;
     padding: 80px 0;
 }
 
@@ -233,7 +233,7 @@ FEATURES
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 80px;
 }
 
 .feat__sub--head, 
@@ -263,7 +263,7 @@ FEATURES
     display: flex;
     box-sizing: border-box;
     padding: 24px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 
 }
 
@@ -289,4 +289,109 @@ FEATURES
 
 .feat__serv--para {
     font-size: 16px;
+    max-width: 75%;
+}
+
+/*
+
+QUALITY WORK
+
+*/
+
+.quality__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 80px 0;
+}
+
+.quality__container .row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.quality__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quality__sub--head {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.quality__head {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.quality__para {
+    margin-bottom: 24px;
+    max-width: 88%;
+}
+
+.quality__description button {
+    width: 188px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #747bf2;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    padding: 20px;
+}
+
+.quality__description button:hover {
+    background-color: rgb(100 21 255);
+    cursor: pointer;
+}
+
+.quality__pic {
+    width: 50%;
+    height: auto 0;
+    border: 2px solid #0000002f;
+    padding: 16px;
+    margin-left: 16px;
+}
+
+/*
+
+STEPS
+
+*/
+
+.steps__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 80px 0;
+}
+
+.steps__container .row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.steps__pic {
+    width: 50%;
+    height: auto 0;
+    padding: 16px;
+}
+
+.steps__description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.steps__steps {
+   
+}
+
+.steps__num--descript {
+    display: flex;
+    flex-direction: column;
 }
