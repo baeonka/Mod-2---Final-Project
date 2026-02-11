@@ -139,7 +139,6 @@ LANDING
     flex: 0 0 40%;
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
     margin-top: 24px;
 }
 
@@ -153,6 +152,9 @@ LANDING
 .comp__girl {
     width: 100%;
     height: auto;
+    max-height: 480px;
+    margin-left: 56px;
+    object-fit: cover;
 }
 
 .landing__logos {
@@ -198,7 +200,7 @@ LANDING
 
 .header__form button {
     position: absolute;
-    left: 452px;
+    left: 432px;
     background-color: #747bf2;
     color: #fff;
     border: none;
@@ -442,7 +444,6 @@ VALUES
 .values__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 20px;
     padding: 64px 0;
 }
@@ -480,7 +481,6 @@ VALUES
 }
 
 .values__item {
-    margin: 0 auto;
     margin-bottom: 40px;
 }
 
@@ -507,17 +507,16 @@ VALUES
     display: flex;
     align-items: center;
     margin: 0;
-    margin-left: 8px;
-}
-
-.values__princ--head {
     
 }
 
+.values__princ--head {
+    font-size: 16px;
+}
+
 .values__princ--para {
-    padding: 12px;
-    margin: 0 auto;
-    margin-top: 8px;
+    max-width: 88%;
+    margin-top: 20px;
 }
 
 .values__pic {
@@ -525,3 +524,155 @@ VALUES
     height: auto;
 }
 
+.values__container button {
+    width: 188px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #747bf2;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    padding: 20px;
+}
+
+/*
+
+PRICING
+
+*/
+
+.pricing__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    padding: 80px 0;
+}
+
+.pricing__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.pricing__sub--head,
+.pricing__head,
+.pricing__para {
+    margin: 10px 0;
+}
+
+.pricing__sub--head {
+    font-size: 20px;
+}
+
+.pricing__head {
+    font-size: 48px;
+}
+
+.pricing__para {
+    padding: 0 348px;
+}
+
+.pricing--row {
+    display: flex;
+}
+
+.price__plan {
+    width: 280px;
+    height: 464px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-top: 80px;
+    position: relative;
+}
+
+.price__name {
+    padding-top: 32px;
+    margin-bottom: 12px;
+}
+
+.price__price {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.price__monthly {
+    font-weight: bold;
+    color:#0000005f;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.price__plan:hover {
+    transform: translateY(-4px);
+}
+
+.price__perks {
+    display: flex;
+    flex-direction: column;
+}
+
+.price__perks--perks li:first-child {
+    font-weight: bold;
+}
+
+.price__perks--perks {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #0000002f;
+    padding: 8px;
+}
+
+.price__perks--list {
+    padding: 12px;
+}
+
+.pricing__container button {
+    width: 172px;
+    font-weight: bold;
+    border-radius: 24px;
+    border: none;
+    padding: 16px;
+    margin-top: 9px;
+}
+
+.personal--plan {
+    background-color: #fff;
+}
+
+.personal--price {
+    color: black;
+}
+
+.personal--btn {
+    background-image: linear-gradient(to right, #68c0aa, #74f7d0) 1;
+}
+
+.green__border {
+    border-top: 8px solid;
+    border-image: linear-gradient(to right, #68c0aa, #74f7d0) 1;
+}
+
+.business--plan {
+    background: linear-gradient(to right, #68c0aa, #74f7d0) 1;
+}
+
+.business--price {
+    color: white;
+}
+
+.business--btn {
+    color:#747bf2;
+    background-color: white;
+}
+.enterprise--price {
+    color: black;
+}
+
+.red__border {
+    border-top: 8px solid;
+    border-image: linear-gradient(to right, #b24f4f, #e8c1c1) 1;
+}
