@@ -14,6 +14,7 @@ body {
 
 .container {
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -535,6 +536,11 @@ VALUES
     padding: 20px;
 }
 
+.values__container button:hover {
+    background-color: rgb(100 21 255);
+    cursor: pointer;
+}
+
 /*
 
 PRICING
@@ -580,13 +586,12 @@ PRICING
 }
 
 .price__plan {
-    width: 280px;
+    width: 320px;
     height: 464px;
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     margin-top: 80px;
-    position: relative;
 }
 
 .price__name {
@@ -622,7 +627,8 @@ PRICING
 .price__perks--perks {
     display: flex;
     flex-direction: column;
-    border: 1px solid #0000002f;
+    border-top: 1px solid #0000002f;
+    border-bottom: 1px solid #0000002f;
     padding: 8px;
 }
 
@@ -636,7 +642,11 @@ PRICING
     border-radius: 24px;
     border: none;
     padding: 16px;
-    margin-top: 9px;
+    margin-top: 12px;
+}
+
+.pricing__container button:hover {
+    cursor: pointer;
 }
 
 .personal--plan {
@@ -648,24 +658,52 @@ PRICING
 }
 
 .personal--btn {
-    background-image: linear-gradient(to right, #68c0aa, #74f7d0) 1;
+    background: linear-gradient(to right, #68c0aa, #74f7d0);
+    color: white;
 }
 
 .green__border {
-    border-top: 8px solid;
-    border-image: linear-gradient(to right, #68c0aa, #74f7d0) 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.green__border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, #68c0aa, #74f7d0);
+    border-radius: 12px 12px 0 0;
 }
 
 .business--plan {
-    background: linear-gradient(to right, #68c0aa, #74f7d0) 1;
+    background: linear-gradient(to right, #1e8ef7, #77afe393);
 }
 
+.name--bus {
+    color: #fff;
+}
 .business--price {
     color: white;
 }
 
+.monthly--bus {
+    color: #fff;
+}
+
+.price__perks--bus {
+    color: #fff;
+}
+
+.business--perks {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
 .business--btn {
-    color:#747bf2;
+    color: rgb(100 21 255);
     background-color: white;
 }
 .enterprise--price {
@@ -673,6 +711,128 @@ PRICING
 }
 
 .red__border {
-    border-top: 8px solid;
-    border-image: linear-gradient(to right, #b24f4f, #e8c1c1) 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.red__border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: linear-gradient(to right, #b24f4f, #e8c1c1);
+    border-radius: 12px 12px 0 0;
+}
+
+.enterprise--btn {
+    color: white;
+    background: linear-gradient(to right, #b24f4f, #e8c1c1);
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.testimonials__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 64px 0;
+}
+
+.testimonials__container .row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.testimonials__pic {
+    width: 100%;
+    max-width: 50%;
+}
+
+.testimonials__description {
+    width: 50%;
+    margin-left: 56px;
+}
+
+.testimonials__sub--head,
+.testimonials__head,
+.testimonials__para {
+    margin: 10px 0;
+}
+
+.testimonials__sub--head {
+    font-size: 20px;
+}
+
+.testimonials__head {
+    font-size: 48px;
+}
+
+.testimonials__para {
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.fa-star,
+.ue__title,
+.ue__para {
+    margin: 12px 0;
+}
+
+.fa-star {
+    color: rgb(250, 222, 41);
+}
+
+.ue__title {
+    font-size: 16px;
+}
+
+.testimonials--row {
+    align-items: center;
+}
+
+.user__photo {
+    width: 80px;
+    height: auto;
+    border-radius: 60px;
+}
+
+.user__names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.user__name {
+    font-size: 16px;
+}
+
+.user__sub {
+    color: #0000005f;
+}
+
+.change__user--btns {
+    display: flex;
+    gap: 24px;
+    margin-left: 148px;
+}
+
+.change__user--btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(100 21 255);
+    padding: 16px;
+    border: none;
+    border-radius: 32px;
+}
+
+.change__user--btns:hover {
+    cursor: not-allowed;
 }
