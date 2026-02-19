@@ -370,8 +370,8 @@ STEPS
 }
 
 .steps__container .row {
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .img__container {
@@ -401,7 +401,7 @@ STEPS
 }
 
 .steps__description {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -660,7 +660,7 @@ PRICING
 }
 
 .pricing__container button:hover {
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 .personal--plan {
@@ -896,16 +896,29 @@ FUNBOX
     padding: 20px;
 }
 
+.funbox__btn:hover {
+    cursor: pointer;
+}
+
 .left--btn {
     color: white;
     background-color: rgb(252, 145, 78);
     border: none;
 }
 
+.left--btn:hover {
+    background-color: rgb(236, 114, 38);
+}
+
 .right--btn {
     color: white;
     background-color: rgb(100 21 255);
     border-color:#fff;
+}
+
+.right--btn:hover {
+    background-color: #747bf2;
+    border: none;
 }
 
 /*
@@ -920,6 +933,7 @@ footer {
     color: white;
     padding: 88px;
     margin: 0;
+    overflow: hidden;
 }
 
 .footer__container {
@@ -932,20 +946,21 @@ footer {
     width: 100%;  
     display: flex;
     border-bottom: 1px solid #0000002f;
+    justify-content: space-between;
     padding-bottom: 16px;
+    z-index: 2;
 }
 
 .link {
-    flex: 1;
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
 }
 
-.link:first-child {
-    margin-right: 56px;
+.link li:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
-
 
 .link__head {
     font-weight: bold;
@@ -981,6 +996,7 @@ footer {
 
 .footer__social--links {
     display: flex;
+    cursor: pointer;
 }
 
 .footer__social--links i {
@@ -997,15 +1013,79 @@ footer {
 
 .circle__bl1 {
     position: absolute;
-    top: -100%;
-    left: 0;
-    width: 240px;
+    z-index: -1;
+    top: -50%;
+    right: 96%;
+    width: 224px;
     height: auto;
+    opacity: 1;
 }
 .circle__bl2 {
     position: absolute;
-    bottom: -100%;
-    right: 0;
-    width: 148px;
+    top: 40%;
+    bottom: -180%;
+    left: 100%;
+    width: 172px;
     height: auto;
+    z-index: 1;
+}
+
+/*
+
+SMALL PHONES, TABLETS, LARGE SMARTPHONES
+
+*/
+
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 48px;
+    }
+
+    .company__name {
+        font-size: 20px;
+    }
+
+    .nav__links {
+        font-size: 16px;
+        gap: 2px;
+    }
+
+    .header__container {
+        margin: 0 auto;
+    }
+
+    .header__description {
+        width: 50%;
+    }
+
+    .header__title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .header__para {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .header__form {
+        margin-bottom: 24px;
+    }
+
+    .header__form button {
+        display: flex;
+        flex-direction: column;
+    }
+    .comp__girl--right {
+        width: 50%;
+    }
+
+    .comp__girl {
+        width: 316px;
+    }
 }
