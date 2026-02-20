@@ -185,28 +185,33 @@ LANDING
     align-items: center;
     border-radius: 24px;
     margin-bottom: 48px;
+    position: relative;
 }
 
 .header__form input[type="email"] {
     flex: 1;
     font-size: 16px;
-    padding: 24px;
+    padding: 20px;
+    padding-right: 180px;
     border-color: #0000002f;
     border-radius: 32px;
+    width: 100%;
 }
 
 .header__form button {
     position: absolute;
-    left: 432px;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #747bf2;
     color: #fff;
     border: none;
     border-radius: 36px;
     font-size: 16px;
     font-weight: bold;
-    padding: 20px 36px;
+    padding: 16px 32px;
     cursor: pointer;
-    margin-left: 10px;
+    white-space: nowrap;
 }
 
 .header__form button:hover {
@@ -928,11 +933,11 @@ FOOTER
 */
 
 footer {
-    width: 100%;
+    width: calc(100% + 40px);
     background-color: #747af2;
     color: white;
     padding: 88px;
-    margin: 0;
+    margin: 0 -20px -20px -20px;
     overflow: hidden;
 }
 
@@ -1040,52 +1045,36 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
 
 }
 
-@media (max-width: 768px) {
-
-    .logo {
-        width: 48px;
-    }
-
-    .company__name {
-        font-size: 20px;
-    }
-
-    .nav__links {
-        font-size: 16px;
-        gap: 2px;
-    }
-
-    .header__container {
-        margin: 0 auto;
+@media (max-width: 1024px) {
+    .header__container .row {
+        display: flex;
+        flex-direction: column;
     }
 
     .header__description {
-        width: 50%;
+        align-items: center;
     }
 
     .header__title {
         font-size: 32px;
-        margin-bottom: 24px;
     }
-
+    
     .header__para {
-        font-size: 14px;
-        margin-bottom: 24px;
+        width: 72%;
+        text-align: center;
     }
 
-    .header__form {
-        margin-bottom: 24px;
-    }
-
-    .header__form button {
-        display: flex;
-        flex-direction: column;
-    }
-    .comp__girl--right {
-        width: 50%;
+    .landing__logos {
+        width: 72%;
     }
 
     .comp__girl {
-        width: 316px;
+        width: fit-content;
+        margin-top: 20px;
     }
-}
+
+    .quality__pic {
+        width: 550px;
+        height: auto;
+    }
+} 
