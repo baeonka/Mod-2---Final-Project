@@ -1051,7 +1051,7 @@ MEDIA QUERIES
 
 */
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
 
 }
 
@@ -1208,7 +1208,12 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
         width: 100%;
     }
 
+    .steps__container {
+        padding: 0px 0px 40px 0px;
+    }
+
     .img__container {
+        margin-top: 16px;
     }
 
     .steps__dots {
@@ -1220,17 +1225,35 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
         align-items: center;
     }
 
+    .steps__sub--head {
+        margin-top: 24px;
+    }
+
     .steps__head {
         font-size: 40px;
     }
 
     .steps__steps {
-        align-items: center;
+        margin-top: 24px;
+        width: 100%;
         justify-content: center;
     }
     .steps__item {
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 40px auto;
+    }
+
+    .steps__num--descript {
+        align-items: flex-start;
+    }
+
+    .steps__num {
+        margin-right: 32px;
+        margin-bottom: 0;
     }
 
     .steps__num--head {
@@ -1257,6 +1280,10 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
         font-size: 14px;
     }
 
+    .pricing__container {
+        padding: 40px 0;
+    }
+
     .pricing__head {
         font-size: 40px;
     }
@@ -1267,6 +1294,11 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
 
     .price__plan {
         width: 100%;
+        margin-top: 40px;
+    }
+
+    .testimonials__container {
+        padding: 24px 0;
     }
 
     .testimonials__head {
@@ -1285,13 +1317,17 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
         font-size: 14px;
     }
 
+    .user__name {
+        font-size: 14px;
+    }
+
     .circle__bl1 {
         top: -40%;
     }
 
     .footer__info {
         flex-direction: column;
-        gap: 24px;
+        gap: 40px;
     }
 
     .circle__bl2 {
@@ -1299,3 +1335,5 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
     }
    
 }
+
+576
