@@ -1144,7 +1144,7 @@ MEDIA QUERIES
     .funbox__btns {
         margin: 0;
   }
-  
+}
 /*
 
 SMALL PHONES, TABLETS, LARGE SMARTPHONES
@@ -1162,5 +1162,140 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
         display: none;
     }
 
+    .header__title {
+        font-size: 40px;
+    }
+
+    .comp__girl {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .feat__container {
+        padding: 40px 32px 0 0;
+    }
+
+    .feat__head {
+        font-size: 40px;
+    }
+
+    .feat__services {
+        padding: 16px;
+    }
+
+    .feat__serv--head {
+        font-size: 16px;
+    }
+
+    .feat__serv--para {
+        font-size: 14px;
+    }
+
+    .quality__head {
+        font-size: 40px;
+    }
+
+    .quality__para {
+        font-size: 14px;
+    }
+
+    .steps__container .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img__container, .steps__description {
+        width: 100%;
+    }
+
+    .img__container {
+    }
+
+    .steps__dots {
+        transform: rotate(90deg)translateX(224%);
+    }
+
+    .steps__description {
+        margin-top: 80px;
+        align-items: center;
+    }
+
+    .steps__head {
+        font-size: 40px;
+    }
+
+    .steps__steps {
+        align-items: center;
+        justify-content: center;
+    }
+    .steps__item {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .steps__num--head {
+        font-size: 16px;
+    }
+
+    .steps__num--para {
+        font-size: 14px;
+    }
+
+    .values__head {
+        font-size: 40px;
+    }
+
+    .values__para {
+        font-size: 14px;
+    }
+
+    .values__princ--head {
+        font-size: 14px;
+    }
+
+    .values__princ--para {
+        font-size: 14px;
+    }
+
+    .pricing__head {
+        font-size: 40px;
+    }
+
+    .pricing--row {
+        flex-direction: column;
+    }
+
+    .price__plan {
+        width: 100%;
+    }
+
+    .testimonials__head {
+        font-size: 40px;
+    }
+
+    .testimonials__para {
+        font-size: 14px;
+    }
+
+    .ue__title {
+        font-size: 14px;
+    }
+
+    .ue__para {
+        font-size: 14px;
+    }
+
+    .circle__bl1 {
+        top: -40%;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .circle__bl2 {
+        top: 88%;
+    }
    
 }
