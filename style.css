@@ -1201,7 +1201,7 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
 @media (max-width: 768px) {
     .burger__menu {
         display: block;
-        font-size: 24px;
+        font-size: 40px;
         cursor: pointer;
     }
 
