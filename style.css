@@ -88,9 +88,22 @@ a:hover {
 .menu__links {
     display: flex;
     flex-direction: column;
-    text-decoration: none;
-    color: #fff;
     gap: 24px;
+}
+.menu__list {
+    font-size: 32px;
+    padding: 24px 0;
+}
+
+.menu__link {
+    color: #fff;
+}
+
+.burger__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
 }
 
 ul {
