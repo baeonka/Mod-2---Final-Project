@@ -311,8 +311,7 @@ FEATURES
 
 .feat__services {
     display: flex;
-    flex-direction: column;
-    width: calc(100% / 3);
+    flex-wrap: wrap;
     padding: 24px;
     margin-bottom: 16px;
 }
@@ -321,6 +320,7 @@ FEATURES
     display: flex;
     align-items: center;
     margin-bottom: 32px;
+    width: calc(100% / 3);
 }
 
 .feat__serv--icon {
@@ -1100,6 +1100,15 @@ MEDIA QUERIES
 */
 
 @media (min-width: 1201px) {
+    .circle__bl1 {
+        top: -40%;
+        left: -39%;
+    }
+
+    .circle__bl2 {
+        top: 88%;
+        left: 120%;
+    }
 
 }
 
