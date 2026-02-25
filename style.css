@@ -1559,6 +1559,10 @@ SMALL PHONES
         justify-content: center;
     }
 
+    .link:last-child {
+        width: 100%;
+    }
+
     .links {
         flex-wrap: wrap;
         justify-content: center;
