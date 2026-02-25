@@ -285,6 +285,8 @@ FEATURES
 
 .feat__container .row {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feat__intro {
@@ -1467,6 +1469,10 @@ SMALL PHONES
 
     .feat__serv--descript {
         align-items: center;
+    }
+
+    .features__para {
+        text-align: center;
     }
 
     .quality__container {
