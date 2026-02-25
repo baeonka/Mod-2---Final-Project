@@ -283,6 +283,10 @@ FEATURES
     padding: 80px 0;
 }
 
+.feat__container .row {
+    justify-content: center;
+}
+
 .feat__intro {
     display: flex;
     flex-direction: column;
@@ -303,10 +307,6 @@ FEATURES
 
 .feat__head {
     font-size: 48px;
-}
-
-.feat__para {
-    padding: 0 348px;
 }
 
 .serv--row {
@@ -1121,6 +1121,14 @@ MEDIA QUERIES
         text-align: center;
     }
 
+
+    .header__form {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
     .landing__logos {
         width: 72%;
     }
@@ -1146,6 +1154,10 @@ MEDIA QUERIES
         max-width: 288px;
     }
 
+    .funbox__content {
+        margin: 0 auto;
+    }
+
     .funbox__quote {
         font-size: 16px;
         text-align: center;
@@ -1161,7 +1173,19 @@ MEDIA QUERIES
 
     .company__name {
         font-size: 24px;
-    } 
+    }
+
+    .form__container {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .header__form {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
     
     .feat__para {
         padding: 0 120px;
@@ -1209,9 +1233,19 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
         display: none;
     }
 
+    .header__description {
+        justify-content: center;
+    }
+
     .header__title {
         font-size: 40px;
         text-align: center;
+    }
+
+    .form__container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .comp__girl {
@@ -1228,6 +1262,7 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
     }
 
     .feat__services {
+        width: calc(100% / 2);
         padding: 16px;
     }
 
@@ -1369,6 +1404,10 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
         font-size: 14px;
     }
 
+    .funbox__content {
+        margin: 0;
+    }
+
     .circle__bl1 {
         top: -40%;
     }
@@ -1389,49 +1428,104 @@ SMALL PHONES
 
 */
 
-@media (max-width: 576px) {
+@media (max-width: 550px) {
     .header__title {
         text-align: center;
     }
 
+    .header__form {
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .header__form input[type="email"] {
+        height: 68px;
+    }
+
+    .header__form button {
+        position: static;
+        transform: none;
+        height: 68px;
+        width: 100%;
+    }
+
+    .feat__container {
+        padding: 0;
+    }
+
     .feat__services {
-        width: calc(100% / 2);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .feat__serv--icon {
+        margin-right: 0;
+    }
+
+    .feat__serv--descript {
+        align-items: center;
     }
 
     .quality__container {
         margin: 40px 0 0 0;
     }
 
-    .quality__description {
-        width: 100%;
+    .quality__container .row {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .quality__pic {
-        display: none;
+        width: 100%;
+    }
+
+    .quality__description {
+        width: 100%;
     }
 
     .steps__dots {
         transform: rotate(90deg) translateX(272%);
     }
 
+    .values__container .row {
+        flex-direction: column-reverse
+    }
+
+    .values__description {
+        width: 100%;
+    }
+
+    .values__sub--head {
+        margin-top: 24px;
+    }
+
     .values__pic {
-        z-index: 1;
+        width: 100%;
     }
 
     .values__princ {
         width: 100%;
-        margin-top: 40px;
-        z-index: 2;
-        gap: 120px;
+        gap: 24px;
     }
 
     .values__princ--para {
         max-width: 100%;
     }
-  
-    .testimonials--row {
+
+    .testimonials__container .row {
         flex-direction: column;
-        align-items: baseline;
+    }
+
+    .testimonials__pic {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .testimonials__description {
+        margin: 0;
     }
 
     .user__names {
@@ -1444,11 +1538,36 @@ SMALL PHONES
        
     }
 
+    .funbox__container {
+        margin: 0 auto;
+    }
+
     .funbox__content {
-        margin: 0 20px;
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .funbox__btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .link {
+        width: calc(100% / 2);
+        align-items: center;
+        justify-content: center;
     }
 
     .links {
+        flex-wrap: wrap;
+        justify-content: center;
         font-size: 12px;
+    }
+
+    .circle__bl1 {
+        top: -32%;
+        right: 88%;    
+        width: 288px;
     }
 }
